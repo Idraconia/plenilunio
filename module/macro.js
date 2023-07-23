@@ -1,11 +1,11 @@
 /**
  * Create a Macro from an attribute drop.
- * Get an existing plenilunio macro if one exists, otherwise create a new one.
+ * Get an existing worldbuilding macro if one exists, otherwise create a new one.
  * @param {Object} data     The dropped data
  * @param {number} slot     The hotbar slot to use
  * @returns {Promise}
  */
-export async function createPlenilunioMacro(data, slot) {
+export async function createWorldbuildingMacro(data, slot) {
   if ( !data.roll || !data.label ) return false;
   const command = `const roll = new Roll("${data.roll}", actor ? actor.getRollData() : {});
   roll.toMessage({speaker, flavor: "${data.label}"});`;
@@ -15,7 +15,7 @@ export async function createPlenilunioMacro(data, slot) {
       name: data.label,
       type: "script",
       command: command,
-      flags: { "plenilunio.attrMacro": true }
+      flags: { "worldbuilding.attrMacro": true }
     });
   }
   game.user.assignHotbarMacro(macro, slot);

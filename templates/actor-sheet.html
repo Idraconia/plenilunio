@@ -97,6 +97,20 @@
                 <span class="attribute-dtype">{{localize "SIMPLE.AttributeDtype"}}</span>
                 <a class="attribute-control" data-action="create" data-group="{{group}}"><i class="fas fa-plus"></i></a>
             </header>
+            <ol class="attributes-list">
+                {{#each actor.data.attributes as |attrib key|}}
+                <li class="attribute flexrow" data-attribute="{{key}}">
+                    <span class="attribute-label flexrow" name="data.attributes.{{key}}.label">{{label}}</span>
+                    <div class="attribute-editbox flexrow">
+                        <input class="attribute-value" type="text" name="data.attributes.{{key}}.value" value="{{attrib.value}}" data-dtype="Number"/>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+            <label class="salud-label"> Aguante: </label>
+            <input type="text" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
+            <label class="salud-label"> Destino: </label>
+            <input type="text" name="data.sobrenatural.destino.value" value="{{data.sobrenatural.destino.value}}" data-dtype="Number"/>
         </div>
     </section>
 </form>

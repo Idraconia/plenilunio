@@ -1,8 +1,8 @@
 {
 "Actor": {
-  "types": ["character"],
+  "types": ["PJ","PNJ"],
   "htmlFields": ["biography"],
-  "character": {
+  "PJ": {
     "biography": "",
     "power": {
       "value": 5,
@@ -10,22 +10,39 @@
       "max": 5
     },
     "attributes": {
-      "fortaleza":{},
-      "combate":{},
-      "voluntad":{},
-      "astucia":{},
-      "sutileza":{},
-      "presencia":{},
-      "cultura":{}
+      "fortaleza":{
+        "value": 0,
+        "label": "Fortaleza"
+      },
+      "combate":{
+        "value": 0,
+        "label": "Combate"
+      },
+      "voluntad":{
+        "value": 0,
+        "label": "Voluntad"
+      },
+      "astucia":{
+        "value": 0,
+        "label": "Astucia"
+      },
+      "sutileza":{
+        "value": 0,
+        "label": "Sutileza"
+      },
+      "presencia":{
+        "value": 0,
+        "label": "Presencia"
+      },
+      "cultura":{
+        "value": 0,
+        "label": "Cultura"
+      }
     },
     "salud":{
       "aguante":{
         "value": 0,
-        "min": 0,
-        "max": 10
-      },
-      "heridas":{
-        "value": "Sano"
+        "label": "Aguante",
       },
       "resistencia":{
         "value": 0,
@@ -33,9 +50,44 @@
         "max": 30
       },
     },
+    "heridas":{
+      "estado":{
+        "value": "",
+        "label": "Estado"
+      },
+      "estados":{
+        "sano": {
+          "label": "Sano",
+          "dtype": "String"
+        },
+        "magullado": {
+          "label": "Magullado",
+          "dtype": "String"
+        },
+        "herido": {
+          "label": "Herido",
+          "dtype": "String"
+        },
+        "malherido": {
+          "label": "Malherido",
+          "dtype": "String"
+        },
+        "muerto": {
+          "label": "Muerto",
+          "dtype": "String"
+        }
+      }
+    },
     "sobrenatural":{
-      "destino":{},
-      "fortuna":{}
+      "destino":{
+        "value": 3,
+        "label": "Destino"
+      },
+      "fortuna":{
+        "value": 0,
+        "min": 0,
+        "max": 10
+      }
     }
   }
 },

@@ -34,32 +34,54 @@
         "label": "Cultura"
       }
     },
-
-
-
     "salud":{
       "aguante": {
         "value": 0,
-        "label": "Aguante",
+        "label": "Aguante"
       },
       "resistencia": {
         "value": 0,
         "min": 0,
         "max": 30
       },
+    },
+    "estado": {
+      "value": "",
+      "label": "Estado"
+    },
+    "estados": {
+      "sano": {
+        "label": "Sano",
+        "dtype": "String"
+      },
+      "magullado": {
+        "label": "Magullado",
+        "dtype": "String"
+      },
+      "herido": {
+        "label": "Herido",
+        "dtype": "String"
+      },
+      "malherido": {
+        "label": "Malherido",
+        "dtype": "String"
+      },
+      "muerto": {
+        "label": "Muerto",
+        "dtype": "String"
+      }
+    },
+    "sobrenatural":{
+      "destino": {
+        "value": 3,
+        "label": "Destino"
+      },
+      "fortuna": {
+        "value": 0,
+        "min": 0,
+        "max": 10
+      }
     }
-
-
-
-
-
-
-
-
-
-
-
-
   }
 },
 "Item": {

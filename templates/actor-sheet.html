@@ -109,6 +109,13 @@
             </ol>
             <label class="salud-label"> Aguante: </label>
             <input type="text" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
+            <select  class="selectrace"  name="data.estado.value"  data-type="String">
+                {{#select actor.data.estado.value}}
+                    {{#each actor.data.estados as |race key|}}
+                    <option  value="{{key}}">{{estado.label}}</option>
+                    {{/each}}
+                {{/select}}
+            </select>
             <label class="salud-label"> Destino: </label>
             <input type="text" name="data.sobrenatural.destino.value" value="{{data.sobrenatural.destino.value}}" data-dtype="Number"/>
         </div>

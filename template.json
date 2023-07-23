@@ -3,7 +3,19 @@
   "types": ["PJ","PNJ"],
   "htmlFields": ["biography"],
   "PJ": {
-    "biography": ""
+    "biography": "",
+    
+    "sobrenatural":{
+      "destino": {
+        "value": 3,
+        "label": "Destino"
+      },
+      "fortuna": {
+        "value": 0,
+        "min": 0,
+        "max": 10
+      }
+    }
   }
 },
 "Item": {

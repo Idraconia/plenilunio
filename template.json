@@ -35,6 +35,16 @@
       }
     },
 
+    "aguante": {
+      "value": 0,
+      "label": "Aguante"
+    },
+    "resistencia": {
+      "value": 0,
+      "min": 0,
+      "max": 30
+    },
+
 
     "estado": {
       "value": "",

@@ -4,15 +4,38 @@
   "htmlFields": ["biography"],
   "character": {
     "biography": "",
-    "health": {
-      "value": 10,
-      "min": 0,
-      "max": 10
-    },
     "power": {
       "value": 5,
       "min": 0,
       "max": 5
+    },
+    "attributes": {
+      "fortaleza":{},
+      "combate":{},
+      "voluntad":{},
+      "astucia":{},
+      "sutileza":{},
+      "presencia":{},
+      "cultura":{}
+    },
+    "salud":{
+      "aguante":{
+        "value": 0,
+        "min": 0,
+        "max": 10
+      },
+      "heridas":{
+        "value": "Sano"
+      },
+      "resistencia":{
+        "value": 0,
+        "min": 0,
+        "max": 30
+      },
+    },
+    "sobrenatural":{
+      "destino":{},
+      "fortuna":{}
     }
   }
 },

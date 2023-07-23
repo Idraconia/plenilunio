@@ -34,6 +34,9 @@
         "label": "Cultura"
       }
     },
+
+
+
     "salud":{
       "aguante": {
         "value": 0,
@@ -45,6 +48,18 @@
         "max": 30
       },
     }
+
+
+
+
+
+
+
+
+
+
+
+
   }
 },
 "Item": {

@@ -33,22 +33,35 @@
         "value": 0,
         "label": "Cultura"
       }
+    },
+
+
+    "estado": {
+      "value": "",
+      "label": "Estado"
+    },
+    "estados": {
+      "sano": {
+        "label": "Sano",
+        "dtype": "String"
+      },
+      "magullado": {
+        "label": "Magullado",
+        "dtype": "String"
+      },
+      "herido": {
+        "label": "Herido",
+        "dtype": "String"
+      },
+      "malherido": {
+        "label": "Malherido",
+        "dtype": "String"
+      },
+      "muerto": {
+        "label": "Muerto",
+        "dtype": "String"
+      }
     }
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
 
   }
 },

@@ -37,7 +37,7 @@
 
 
 
-    "salud":{
+    "salud": {
       "aguante": {
         "value": 0,
         "label": "Aguante"

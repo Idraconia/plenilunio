@@ -3,7 +3,36 @@
   "types": ["PJ","PNJ"],
   "htmlFields": ["biography"],
   "PJ": {
-    
+    "biography": "",
+    "attributes": {
+      "fortaleza": {
+        "value": 0,
+        "label": "Fortaleza"
+      },
+      "combate": {
+        "value": 0,
+        "label": "Combate"
+      },
+      "voluntad": {
+        "value": 0,
+        "label": "Voluntad"
+      },
+      "astucia": {
+        "value": 0,
+        "label": "Astucia"
+      },
+      "sutileza": {
+        "value": 0,
+        "label": "Sutileza"
+      },
+      "presencia": {
+        "value": 0,
+        "label": "Presencia"
+      },
+      "cultura": {
+        "value": 0,
+        "label": "Cultura"
+      }
   }
 },
 "Item": {

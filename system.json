@@ -1,14 +1,14 @@
 {
-  "id": "worldbuilding",
+  "id": "plenilunio",
   "version": "0.8.2",
-  "title": "Simple World-Building",
-  "url": "https://github.com/foundryvtt/worldbuilding/",
-  "description": "A minimalist game system which provides configurable Actor and Item templates to support free-form system agnostic game-play.",
+  "title": "Malefic Time Plenilunio",
+  "url": "https://github.com/Idraconia/plenilunio",
+  "description": "Sistema para el juego de rol plenilunio basado en el sistema Symple Worldbuilding",
   "license": "LICENSE.txt",
   "authors": [
     {
-      "name": "Atropos",
-      "url": "https://foundryvtt.com"
+      "name": "Inoku",
+      "url": "https://idraconia.es"
     }
   ],
   "esmodules": ["module/simple.js"],

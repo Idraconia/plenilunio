@@ -100,7 +100,7 @@
                 -->
             </header>
             <ol class="attributes-list">
-                {{#each actor.data.attributes as |attrib key|}}
+                {{#each data.attributes as |attrib key|}}
                 <li class="attribute flexrow" data-attribute="{{key}}">
                     <span class="attribute-label flexrow" name="data.attributes.{{key}}.label">{{label}}</span>
                     <div class="attribute-editbox flexrow">
@@ -109,26 +109,19 @@
                 </li>
                 {{/each}}
             </ol>
-
-            <li>
-                <span class="salud-label flexrow" name="data.salud.aguante.label">Aguante:</span>
-                <div class="salud-editbox flexrow">
-                    <<input type="number" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
-                </div>
-            </li>
-            <!--<label class="salud-label"> Aguante: </label>-->
-            
+            <label class="salud-label"> Aguante: </label>
+            <input type="text" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
             <label class="salud-label"> Estado: </label>
             <select  class="selectestado"  name="data.estado.value"  data-type="String">
-                {{#select actor.data.estado.value}}
-                    {{#each actor.data.estados as |estado key|}}
+                {{#select data.estado.value}}
+                    {{#each data.estados as |estado key|}}
                     <option  value="{{key}}">{{estado.label}}</option>
                     {{/each}}
                 {{/select}}
             </select>
 
             <label class="salud-label"> Destino: </label>
-            <input type="number" name="data.sobrenatural.destino.value" value="{{data.sobrenatural.destino.value}}" data-dtype="Number"/>
+            <input type="text" name="data.sobrenatural.destino.value" value="{{data.sobrenatural.destino.value}}" data-dtype="Number"/>
         </div>
     </section>
 </form>

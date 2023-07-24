@@ -8,23 +8,23 @@
                 <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
             </h1>
             <div class="resource">
-                <input type="number" name="system.health.value" value="{{systemData.health.value}}"/>
+                <input type="number" name="system.salud.value" value="{{systemData.salud.resistencia.value}}"/>
                 <span> / </span>
-                <input type="number" name="system.health.max" value="{{systemData.health.max}}"/>
+                <input type="number" name="system.salud.max" value="{{systemData.salud.resistencia.max}}"/>
             </div>
             <div class="resource">
-                <input type="number" name="system.power.value" value="{{systemData.power.value}}"/>
+                <input type="number" name="system.power.value" value="{{systemData.sobrenatural.fortuna.value}}"/>
                 <span> / </span>
-                <input type="number" name="system.power.max" value="{{systemData.power.max}}"/>
+                <input type="number" name="system.sobrenatural.fortuna.max" value="{{systemData.sobrenatural.fortuna.max}}"/>
             </div>
         </div>
     </header>
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="description">Descripcion</a>
         <a class="item" data-tab="items">Items</a>
-        <a class="item" data-tab="attributes">Attributes</a>
+        <a class="item" data-tab="attributes">Atributos</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -109,6 +109,7 @@
             </ol>
             <label class="salud-label"> Aguante: </label>
             <input type="text" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
+            <label class="salud-label"> Estado: </label>
             <select  class="selectrace"  name="data.estado.value"  data-type="String">
                 {{#select actor.data.estado.value}}
                     {{#each actor.data.estados as |race key|}}
@@ -116,6 +117,7 @@
                     {{/each}}
                 {{/select}}
             </select>
+
             <label class="salud-label"> Destino: </label>
             <input type="text" name="data.sobrenatural.destino.value" value="{{data.sobrenatural.destino.value}}" data-dtype="Number"/>
         </div>

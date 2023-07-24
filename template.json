@@ -1,6 +1,6 @@
 {
 "Actor": {
-  "types": ["PJ","PNJ"],
+  "types": ["PJ"],
   "htmlFields": ["biography"],
   "PJ": {
     "biography": "",

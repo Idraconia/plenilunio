@@ -100,7 +100,7 @@
                 -->
             </header>
             <ol class="attributes-list">
-                {{#each actor.data.attributes as |attrib key|}}
+                {{#each data.attributes as |attrib key|}}
                 <li class="attribute flexrow" data-attribute="{{key}}">
                     <span class="attribute-label flexrow" name="data.attributes.{{key}}.label">{{label}}</span>
                     <div class="attribute-editbox flexrow">
@@ -113,7 +113,7 @@
             <input type="text" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
             <label class="salud-label"> Estado: </label>
             <select  class="selectestado"  name="data.estado.value"  data-type="String">
-                {{#select actor.data.estado.value}}
+                {{#select data.estado.value}}
                     {{#each data.estados as |estado key|}}
                     <option  value="{{key}}">{{estado.label}}</option>
                     {{/each}}

@@ -22,9 +22,9 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="attributes">Atributos</a>
         <a class="item" data-tab="description">Descripcion</a>
         <a class="item" data-tab="items">Items</a>
-        <a class="item" data-tab="attributes">Atributos</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -109,6 +109,8 @@
                 </li>
                 {{/each}}
             </ol>
+            <label class="fortaleza-label"> {{data.attributes.fortaleza.label}}: </label>
+            <input type="text" name="data.attributes.fortaleza.value" value="{{data.attributes.fortaleza.value}}" data-dtype="Number"/>
             <label class="salud-label"> Aguante: </label>
             <input type="text" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
             <label class="salud-label"> Estado: </label>

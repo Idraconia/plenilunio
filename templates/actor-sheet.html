@@ -109,8 +109,15 @@
                 </li>
                 {{/each}}
             </ol>
-            <label class="salud-label"> Aguante: </label>
-            <input type="text" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
+
+            <li>
+                <span class="salud-label flexrow" name="data.salud.label">{{label}}</span>
+                <div class="salud-editbox flexrow">
+                    <<input type="number" name="data.salud.aguante.value" value="{{data.salud.aguante.value}}" data-dtype="Number"/>
+                </div>
+            </li>
+            <!--<label class="salud-label"> Aguante: </label>-->
+            
             <label class="salud-label"> Estado: </label>
             <select  class="selectestado"  name="data.estado.value"  data-type="String">
                 {{#select actor.data.estado.value}}
@@ -121,7 +128,7 @@
             </select>
 
             <label class="salud-label"> Destino: </label>
-            <input type="text" name="data.sobrenatural.destino.value" value="{{data.sobrenatural.destino.value}}" data-dtype="Number"/>
+            <input type="number" name="data.sobrenatural.destino.value" value="{{data.sobrenatural.destino.value}}" data-dtype="Number"/>
         </div>
     </section>
 </form>
